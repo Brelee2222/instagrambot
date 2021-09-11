@@ -40,4 +40,6 @@ jobs:
         env: # Or as an environment variable
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-        run: main.js
+        run: |
+          using: 'node14'
+          main: 'main.js'
