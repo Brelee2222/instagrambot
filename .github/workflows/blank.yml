@@ -23,9 +23,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Hello world action
-        with: # Set the secret as an input
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
         env: # Or as an environment variable
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
